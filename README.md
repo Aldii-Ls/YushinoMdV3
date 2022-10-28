@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://telegra.ph/file/a8641df0da430cb23f976.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+    <img src="https://telegra.ph/file/ba89874134b8b71478a0d.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 <h1 align="center">Yushino V3</h1>
 
