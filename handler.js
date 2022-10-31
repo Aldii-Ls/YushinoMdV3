@@ -51,7 +51,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp))
                     user.exp = 0
                 if (!isNumber(user.limit))
-                    user.limit = 100
+                    user.limit = 5
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!isNumber(user.pasangan))
@@ -207,7 +207,7 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 100,
+                    limit: 5,
                     lastclaim: 0,
                     registered: false,
                     name: m.name,
@@ -682,7 +682,7 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
+                    let pp = 'https://telegra.ph/file/f87fb917aadcbd4d1c969.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
@@ -704,11 +704,11 @@ export async function participantsUpdate({ id, participants, action }) {
                                 membercount: groupMetadata.participants.length
                             })
                             
- /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+ /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'よこそう ' : 'さよなら', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
     mediaType: 2, 
     description: sgc,
-    title: 'Hᴀʟᴏ Nɢᴀʙ',
+    title: 'Hai!',
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: sgc
@@ -716,7 +716,7 @@ export async function participantsUpdate({ id, participants, action }) {
   })*/
   let welcom = 'https://telegra.ph/file/35f17bb371d308504bc46.jpg'
 
-  let godbye = 'https://telegra.ph/file/b44e48066aed4fb7ad291.jpg'
+  let godbye = 'https://telegra.ph/file/44f4541bb4d7aeabbebe7.jpg'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://instagram.com',
     mediaType: 2, 
