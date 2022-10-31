@@ -32,12 +32,12 @@ let handler = async (m, { conn, args, command }) => {
        let tag = `@${m.sender.replace(/@.+/, '')}`
   let mentionedJid = [m.sender]
 let scnya = `⟥⟞⟚━┈┈ ❨ Hʏ ${tag} ❩ ┈┈━⟚⟝⟤`
-    let footerny = `┆📮 *ɴᴏᴛᴇ!* : Jɪᴋᴀ ᴋᴀʟɪᴀɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴀᴛᴀᴜ ᴄᴏᴘᴀs ᴅᴀʀɪ sᴄʀɪᴘᴛ ɪɴɪ ᴍᴀᴋᴀ ᴄʀᴇᴅɪᴛ ᴅᴀʀɪ sᴄᴇɪᴘᴛ ɪɴɪ ʜᴀʀᴜs ᴀᴅᴀ.\n┆📑  *Base* : https://github.com/ImYanXiao/Elaina-MultiDevice\n┆🥊 *Sᴄʀɪᴘᴛ* : ${snh}\n\n\n${readMore}┆ *I Love You:v*`
+    let footerny = `┆ *ɴᴏᴛᴇ!* : 𝙽𝚐𝚊𝚙𝚊𝚒𝚗 𝙱𝚊𝚗𝚑? :𝚋.\n┆📑  *Base* : https://github.com/ImYanXiao\n┆ Hayooo :v, Mau yg udh Di Rinem? Chat Owner : ${snh}\n\n\n${readMore}┆ *I Love You:v*`
  conn.send3ButtonImg(m.chat, `https://telegra.ph/file/bf8b82dc34d14d25e67b8.jpg`, scnya, footerny, 'Menu', '.menu', 'Owner', '.owner', 'Credit', '.credit', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram.com/b4c00t4an_s3l3b',
+    mediaUrl: 'https://instagram.com/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    title: "Yor in Here?",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: sgc
