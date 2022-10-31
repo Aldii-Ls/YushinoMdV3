@@ -30,7 +30,7 @@ export async function handler(chatUpdate) {
     this.pushMessage(chatUpdate.messages).catch(console.error)
     let m = chatUpdate.messages[chatUpdate.messages.length - 1]
     
-    global.img = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' 
+    global.img = 'https://telegra.ph/file/2de668d988079c66af907.jpg' 
     
     if (!m)
         return
@@ -721,7 +721,7 @@ export async function participantsUpdate({ id, participants, action }) {
     mediaUrl: 'https://instagram.com',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    title: "Yor Ft. Yuzu",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sgc
@@ -747,10 +747,10 @@ export async function participantsUpdate({ id, participants, action }) {
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
 conn.sendButtonImg(id, `${pickRandom(flaaa2)}` + `Congratulation ` + '@user', 'Sᴇʟᴀᴍᴀᴛ Nᴀɪᴋ Jᴀʙᴀᴛᴀɴ', text, mentions: this.parseMention(text), { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://facebook.com/sadtime098',
+    mediaUrl: 'https://instagram.com/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴀɴɢᴀɴ Lᴜᴘᴀ Mᴀɴᴅɪ!!",
+    title: "Yor in Here!!",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: sgc
