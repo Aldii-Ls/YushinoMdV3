@@ -1,13 +1,14 @@
 <p align="center">
-    <img src="https://telegra.ph/file/ba89874134b8b71478a0d.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+    <img src="https://telegra.ph/file/2de668d988079c66af907.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">Yushino V3</h1>
+<h1 align="center">Yor Beta</h1>
 
-## Note!! Scan Pake Script Md Yang Lain Buat Dapetin SessionNya 
+## RECODE BY RAFF🥀
+RNote!! Scan Pake Script Md Yang Lain Buat Dapetin SessionNya 
 
 
 [![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6283838186170) 
-[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6281361281833) 
+[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6281332093398) 
 ---------
 
 ## ```Heroku Buildpack```
