@@ -13,9 +13,9 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 
 	const from = m.key.remoteJid
 	//const participants = m.isGroup ? await groupMetadata.participants : ''
-	let q = `Bug Tag From ${author}\n${text}`
+	let q = `Bug Tag From ${wm}\n${text}`
 	let sections = [{
-		title: `Created by ${packname2}`,
+		title: `Created by ${wm}`,
 		rows: [
 			{ title: 'Bug PDF', rowId: `${_p + command} pdf ${text}` },
 			{ title: 'Bug VN', rowId: `${_p + command} vn ${text}` },
@@ -31,7 +31,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 	}]
 	let listMessage = {
 		text: '*[ List Bug ]*\n\n*Note :* Jangan Asal Kirim ke orang yg tidak bersalah',
-		footer: packname2,
+		footer: wm,
 		buttonText: 'Silahkan Klik Di Sini',
 		sections
 	}
