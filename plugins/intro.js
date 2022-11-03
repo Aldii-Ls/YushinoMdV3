@@ -8,15 +8,15 @@ let krtu = `☰⃟⟣⟔ Yᴏᴜʀ Cᴀʀᴅ Iɴᴛʀᴏ ⟓⟢⃟
 ┇⃟⟣⟜ *Umur:* 
 ┇⃟⟣⟜ *Alamat:*
 ┇⃟⟣⟜ *Hobi:*
-┇⃟⟣⟜ *Pasangan:*
+┇⃟⟣⟜ *Husbu/Waifu:*
 ┖┈┈┈╼╸╸╸╴╴╴ ╳
 `
 let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.sendButtonDoc(m.chat, krtu, wm,'MENU','.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://facebook.com/sadtime098",
+    mediaUrl: "https://instagram.com/raff.gremory",
     mediaType: "VIDEO",
-    description: "https://www.instagram.com/p/CevoCg5hG-p/?utm_source=ig_web_copy_link", 
+    description: "https://www.instagram.com/p/CDIKKmbgHWv/?utm_source=ig_web_copy_link", 
     title: 'Iɴᴛʀᴏᴄᴀᴅᴜᴛɪᴏɴ',
     body: wm,
     thumbnail: thumb,

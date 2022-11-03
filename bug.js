@@ -267,7 +267,7 @@ case 'pdf': {
 }
 break
 case 'sticker': {
-let stiker = await sticker(null, 'https://telegra.ph/file/e2d2fac4853f1f923b35c.jpg', global.packname, global.author)
+let stiker = await sticker(null, 'https://telegra.ph/file/63e4dae3b98ce373b99b6.jpg', global.packname, global.author)
 conn.sendFile(text.replace(/[^0-9]/g, '') + '@s.whatsapp.net', stiker, 'sticker.webp', '', false, { asSticker: true }, {quoted: bugstik})
 //await m.reply(`Berhasil Mengirim ${type} Di Nomer ${text}@s.whatsapp.net`)
 }
@@ -291,7 +291,7 @@ case 'bugkontak': {
 let res = await generateWAMessageFromContent(text.replace(/[^0-9]/g, '') + '@s.whatsapp.net', {
 "contactMessage": {
 "vcard": "HAHaAhHAHAHA",
-"displayName": `HyzerDev`,
+"displayName": `YorForger`,
 "contextInfo": {
 "forwardingScore": 3,
 "isForwarded": true

@@ -30,7 +30,7 @@ export async function handler(chatUpdate) {
     this.pushMessage(chatUpdate.messages).catch(console.error)
     let m = chatUpdate.messages[chatUpdate.messages.length - 1]
     
-    global.img = 'https://telegra.ph/file/e4a2f4339da8a32ad20a1.jpg' 
+    global.img = 'https://telegra.ph/file/2de668d988079c66af907.jpg' 
     
     if (!m)
         return
@@ -51,7 +51,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp))
                     user.exp = 0
                 if (!isNumber(user.limit))
-                    user.limit = 100
+                    user.limit = 5
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!isNumber(user.pasangan))
@@ -207,7 +207,7 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 100,
+                    limit: 5,
                     lastclaim: 0,
                     registered: false,
                     name: m.name,
@@ -303,7 +303,7 @@ export async function handler(chatUpdate) {
                 if (!('sDemote' in chat))
                     chat.sDemote = ''
                 if (!('delete' in chat))
-                    chat.delete = true
+                    chat.delete = false
                 if (!('antiLink' in chat))
                     chat.antiLink = true
                 if (!('viewonce' in chat))
@@ -327,7 +327,7 @@ export async function handler(chatUpdate) {
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
-                    delete: true,
+                    delete: false,
                     antiLink: true,
                     viewonce: false,
                     antiBadword: true,
@@ -682,7 +682,7 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png'
+                    let pp = 'https://telegra.ph/file/f87fb917aadcbd4d1c969.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
@@ -704,11 +704,11 @@ export async function participantsUpdate({ id, participants, action }) {
                                 membercount: groupMetadata.participants.length
                             })
                             
- /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
+ /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'よこそう ' : 'さよなら', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://instagram/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: 'Hᴀʟᴏ Nɢᴀʙ',
+    title: 'Hai!',
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: sgc
@@ -716,12 +716,12 @@ export async function participantsUpdate({ id, participants, action }) {
   })*/
   let welcom = 'https://telegra.ph/file/35f17bb371d308504bc46.jpg'
 
-  let godbye = 'https://telegra.ph/file/b44e48066aed4fb7ad291.jpg'
+  let godbye = 'https://telegra.ph/file/44f4541bb4d7aeabbebe7.jpg'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://instagram.com',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    title: "Yor Ft. Yuzu",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sgc
@@ -747,10 +747,10 @@ export async function participantsUpdate({ id, participants, action }) {
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
 conn.sendButtonImg(id, `${pickRandom(flaaa2)}` + `Congratulation ` + '@user', 'Sᴇʟᴀᴍᴀᴛ Nᴀɪᴋ Jᴀʙᴀᴛᴀɴ', text, mentions: this.parseMention(text), { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://facebook.com/sadtime098',
+    mediaUrl: 'https://instagram.com/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴀɴɢᴀɴ Lᴜᴘᴀ Mᴀɴᴅɪ!!",
+    title: "Yor in Here!!",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: sgc
@@ -794,11 +794,11 @@ export async function deleteUpdate(message) {
             return
             
         await conn.send2ButtonDoc(msg.chat, `Terdeteksi @${participant.split`@`[0]} telah menghapus pesan*`, '\nMematikan fitur ini, Klik Button dibawah', 'Disable Antidelete', '.disable antidelete', 'Owner', '.Owner', msg, { contextInfo: { externalAdReply: {
-title: 'Hᴀʟᴏ BᴏsQ><',
+title: 'Hᴀʟᴏ Alat.',
 body: wm, 
 thumbnail: fs.readFileSync("./thumbnail.jpg"),
 mediaType:1,
-mediaUrl: "https://telegra.ph/file/1216a636cb2add65a34ae.jpg",
+mediaUrl: "https://telegra.ph/file/63e4dae3b98ce373b99b6.jpg",
 sourceUrl: snh 
 }}})
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
@@ -827,12 +827,12 @@ const fgclink = {
        let tag = `@${m.sender.replace(/@.+/, '')}`
   let mentionedJid = [m.sender]
     let rown = {
-        rowner: '*ᴏɴʟʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴅᴇᴠᴇʟᴏᴘᴇʀ ʙᴏᴛ'}[type]
+        rowner: '*𝙽𝚐𝚊𝚙𝚊𝚒𝚗 𝙱𝚊𝚗𝚐?, 𝙾𝚠𝚗𝚎𝚛 𝚈𝚘𝚛 𝚊𝚓𝚊 𝚈𝚐 𝚋𝚒𝚜𝚊'}[type]
   if (rown) return conn.sendButtonDocAccess(m.chat, `${ucapan()} ` + tag, rown + '\n\n\n\n', 'Owner', '.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram.com/_b4c00t4an_s3l3b',
+    mediaUrl: 'https://instagram.com/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: "Join Sini Juga Cuy!",
+    title: "Yor in Here!",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: sgc
@@ -841,12 +841,12 @@ const fgclink = {
 
         
 let own = {
-owner: '*ᴏɴʟʏ ᴏᴡɴᴇʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴏᴡɴᴇʀ ʙᴏᴛ'}[type]
+owner: '*𝙽𝚐𝚊𝚙𝚊𝚒𝚗 𝙱𝚊𝚗𝚐?, :𝚋'}[type]
   if (own) return conn.sendButtonDocAccess(m.chat, `${ucapan()} ` + tag, own + '\n\n\n\n', 'Owner', '.owner', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram.com/_b4c00t4an_s3l3b',
+    mediaUrl: 'https://instagram.com/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: "Join Sini Juga Cuy!",
+    title: "Yor in Here!",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: sgc
@@ -854,24 +854,24 @@ owner: '*ᴏɴʟʏ ᴏᴡɴᴇʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ �
   })
 
 let mod = {
-mods: '*ᴏɴʟʏ ᴍᴏᴅᴇʀᴀᴛᴏʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴍᴏᴅᴇʀᴀᴛᴏʀ ʙᴏᴛ'}[type]
+mods: '*ᴏɴʟʏ ᴍᴏᴅᴇʀᴀᴛᴏʀ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴍᴏᴅᴇʀᴀᴛᴏʀ'}[type]
   if (mod) return conn.sendButtonDocAccess(m.chat, `${ucapan()} ` + tag, mod + '\n\n\n\n', 'MENU', '.menu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram.com/_b4c00t4an_s3l3b',
+    mediaUrl: 'https://instagram.com/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: "Join Sini Juga Cuy!",
+    title: "YorForger!",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: sgc
      }}
   })
 let prm = {
-        premium: '*ᴏɴʟʏ ᴘʀᴇᴍɪᴜᴍ* • ᴄᴏᴍᴍᴀɴᴅ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ'}[type]
+        premium: '*𝚈𝚊𝚑𝚊𝚑𝚊𝚑𝚊 𝙺𝚊𝚌𝚒𝚊𝚗 𝙵𝚛𝚎𝚎mium :v,Mau Premium?'}[type]
   if (prm) return conn.sendButtonDocAccess(m.chat, `${ucapan()} ` + tag, prm + '\n\n\n\n', 'Beli Prem', '.sewa', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram.com/_b4c00t4an_s3l3b',
+    mediaUrl: 'https://instagram.com/raff.gremory',
     mediaType: 2, 
     description: sgc,
-    title: "Join Sini Juga Cuy!",
+    title: "Yor in Here!",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: sgc
